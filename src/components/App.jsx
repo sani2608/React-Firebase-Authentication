@@ -6,6 +6,7 @@ import Login from "./Login";
 import UpdateProfile from "./UpdateProfile";
 import { Link } from "react-router-dom";
 import PrivateRoute from "./PrivateRoute";
+import ForgotPassword from "./ForgotPassword";
 function App() {
   return (
     <Container
@@ -22,6 +23,7 @@ function App() {
             </Route>
             <Route path="/signup" element={<Signup />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/forgot-password" element={<ForgotPassword />} />
             <Route
               path="*"
               element={
