@@ -6,7 +6,6 @@ import { useAuth } from "../contexts/AuthContext";
 export const PrivateRoute = () => {
   const { currentUser } = useAuth();
 
-  console.log("user autheticated", user);
 
   return typeof currentUser === "undefined" ? (
     <h1>Loading.....</h1>
